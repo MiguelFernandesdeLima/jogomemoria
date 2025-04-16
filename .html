@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="memory-game">
+        <header class="game-header">
+            <h1>Jogo da Memória</h1>
+            
+            <div class="game-controls">
+                <div class="score">
+                    <span id="moves">0</span> movimentos
+                </div>
+                
+                <div class="theme-selector">
+                    <button class="theme-btn" data-theme="default">Padrão</button>
+                    <button class="theme-btn" data-theme="nature">Natureza</button>
+                    <button class="theme-btn" data-theme="space">Espaço</button>
+                </div>
+                
+                <button id="restart" class="control-btn">
+                    <i class="fas fa-redo"></i> Reiniciar
+                </button>
+            </div>
+        </header>
+        
+        <main class="game-board" id="game-board">
+            <!-- As cartas serão geradas dinamicamente via JavaScript -->
+        </main>
+        
+        <div class="game-over" id="game-over">
+            <div class="game-over-content">
+                <h2>Parabéns!</h2>
+                <p>Você completou o jogo em <span id="final-moves">0</span> movimentos!</p>
+                <button id="play-again">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src=".js"></script>
+</body>
+</html>
